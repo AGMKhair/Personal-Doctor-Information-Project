@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dailymarketlist.securesoftbd.bitmfirebaseproject" android:installLocation="preferExternal">
+    package="com.agmkhair.spontit.personaldoctor"
+    android:installLocation="preferExternal">
 
     <uses-feature android:name="android.hardware.Camera" android:required="true"></uses-feature>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.agmkhair.spontit.personaldoctor.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddDoctorActivity" />
-        <activity android:name=".ShowDoctorActivity" />
-        <activity android:name=".AddMedicalDetailsActivity" />
-        <activity android:name=".ShowMedicalActivity" />
-        <activity android:name=".UpdateDoctorInformationActivity"></activity>
+        <activity android:name="com.agmkhair.spontit.personaldoctor.AddDoctorActivity" />
+        <activity android:name="com.agmkhair.spontit.personaldoctor.ShowDoctorActivity" />
+        <activity android:name="com.agmkhair.spontit.personaldoctor.AddMedicalDetailsActivity" />
+        <activity android:name="com.agmkhair.spontit.personaldoctor.ShowMedicalActivity" />
+        <activity android:name="com.agmkhair.spontit.personaldoctor.UpdateDoctorInformationActivity"></activity>
     </application>
 
 </manifest>
