@@ -4,10 +4,10 @@ android {
     compileSdkVersion 34
     defaultConfig {
         applicationId "com.agmkhair.spontit.personaldoctor"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 34
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 4
+        versionName "1.0.4"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
@@ -16,17 +16,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.agmkhair.spontit.personaldoctor'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
 
 }

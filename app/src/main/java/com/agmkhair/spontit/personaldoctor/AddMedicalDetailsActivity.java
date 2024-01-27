@@ -47,7 +47,7 @@ public class AddMedicalDetailsActivity extends AppCompatActivity {
 
         initialization();
         List<String> s = dbHelper.DoctorName();
-        ArrayAdapter<String> spinnerAdepter = new ArrayAdapter(AddMedicalDetailsActivity.this,android.R.layout.simple_spinner_item,s);
+        ArrayAdapter<String> spinnerAdepter = new ArrayAdapter<>(AddMedicalDetailsActivity.this,android.R.layout.simple_spinner_item,s);
         doctorNameVar.setAdapter(spinnerAdepter);
         onClick();
 
